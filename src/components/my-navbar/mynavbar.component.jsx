@@ -6,7 +6,7 @@ import "./mynavbar.style.css";
 const MyNavbar = () => {
     return (
         <div>
-<Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+<Navbar fixed="top" collapseOnSelect expand="lg" variant="dark">
   <Navbar.Brand href="#home">
       <img className="logo" src={Logo} alt="Logo"/>
   </Navbar.Brand>

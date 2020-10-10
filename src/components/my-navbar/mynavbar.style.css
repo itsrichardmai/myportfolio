@@ -6,7 +6,6 @@
     background-color: #101018f8;
     font-size: 20px;
   }
-  
   .animate-navbar {
     box-shadow: 1px 1px 1px #222;
     animation: moveDown 0.5s ease-in-out;
@@ -20,3 +19,12 @@
       transform: translateY(0rem);
     }
   }
+
+  .nav-link {
+    font-size: 125%;
+    color: silver;
+  }
+.nav-link:hover {
+  background-color: black;
+  border: rounded solid 2px;
+}

@@ -1,11 +1,7 @@
 import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
-// projects
-import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
-import L_SmartBrain from "../../assets/img/projects/brain.webp";
-import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
-import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
+// projects;
 import L_OldPortfolio from "../../assets/img/projects/oldportfolio.webp";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -26,9 +22,10 @@ import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
 import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
-import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
+import L_AUTHDEV from "../../assets/img/projects/authapp.png";
+import L_FIREBASE from "../../assets/img/projects/firebase.webp";
+
 
 import "./projects-timeline.styles.css";
 
@@ -256,12 +253,12 @@ const TimeLine = () => {
           {/* Project: RoboFriends */}
 
           <ImageEvent
-            date="14/01/2020"
+            date="26/10/2020"
             className="text-center"
-            text="Placeholder Text"
-            // src={L_RoboFriends}
-            alt="Placeholder text"
-          >
+            text="Login Authorization Application"
+            src={L_AUTHDEV}
+            alt="Login Authorization Application"
+          > 
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
@@ -276,13 +273,16 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong>An application description
+                        <strong>Description:</strong>
+                        <p>Built Firebase authorization application. Signup, Login, Reset Password and UpdateProfile all enabled and functioning as intended. Logic is handled through react hooks. Routing handled by react-router-dom package. Authorization & authentication handled by Firebase </p>
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>listing placeholder</li>
-                          <li>listing placeholder</li>
-                          <li>listing placeholder</li>
+                          <li>User Signup</li>
+                          <li>User Login</li>
+                          <li>Change Passw.</li>
+                          <li>UpdateProfile</li>
+                          <li>Functioning database</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -342,6 +342,17 @@ const TimeLine = () => {
                               Redux
                             </span>
                           </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_FIREBASE}
+                                alt="Firebase"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Firebase
+                            </span>
+                          </li>
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -356,7 +367,7 @@ const TimeLine = () => {
                   SEE LIVE
                 </UrlButton>
                 <UrlButton
-                  href="#"
+                  href="https://github.com/itsrichardmai/authenticationapp"
                   target="_blank"
                 >
                   SOURCE CODE

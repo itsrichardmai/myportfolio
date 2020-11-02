@@ -24,14 +24,11 @@ const About = () => {
               <Col xs={12} md={6}>
                 <Row className=" align-items-start p-2 my-details rounded">
                   Hi there! I am <strong>&nbsp;Richard Mai</strong>
-                  <br className="achievements"/> A Proud Central High School Alumni, Philadelphian, Passionate Programmer & Marketer
-                  <br />
+                  <br/> A Proud Central High School Alumni, Philadelphian, Passionate Programmer & Marketer.
                   Raised from an Asian family, I was enstilled the importance of being humble. I believe that we, no matter our titles or situations, are and will forever be students. 
                   Especially so in the rapidly growing field of technology.  
-                  <br/>
-                  <br/>
                   In 2019, I completed the Unniversity of Pennsylannia's 24-week Coding Bootcamp.
-                  <br />
+
                   In total, I have been a developer for two years.
                   <br/>
                   <br/>
@@ -46,7 +43,7 @@ const About = () => {
                       </a>
                     </div>
                     <div>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      <a href="https://drive.google.com/file/d/1YSo0N2Sg6biSIySY_J68Q5NKdH4GIy7E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <Button className="m-2" variant="outline-success">
                           My Resume
                         </Button>

@@ -25,7 +25,7 @@ import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_AUTHDEV from "../../assets/img/projects/authapp.png";
 import L_FIREBASE from "../../assets/img/projects/firebase.webp";
-
+import L_MYPORTFOLIO from "../../assets/img/projects/myportfolio.webp"
 
 import "./projects-timeline.styles.css";
 
@@ -141,13 +141,13 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: Smart Brain */}
+
           <ImageEvent
-            date="21/01/2020"
+            date="30/10/2020"
             className="text-center"
-            text="Placeholder Text"
-            // src={L_SmartBrain}
-            alt="Placeholder Text"
+            text="Reactive Portfolio"
+            src={L_MYPORTFOLIO}
+            alt="Reactive Portfolio"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -163,13 +163,15 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An application description
+                        <strong>Description:</strong>
+                        <p>Modern website portfoio built using ReactJS. Routing handled using React dom router package.</p>
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>listing placeholder</li>
-                          <li>listing placeholder</li>
-                          <li>listing placeholder</li>
+                          <li>Responsive view for all devices</li>
+                          <li>Utilizies a JS file to contain relevant links.</li>
+                          <li>Consistently structured file architecture</li>
+                          <li>Utilizes multiple open sourced packages such as react bootstrap, parrallax,  </li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -188,34 +190,45 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_BOOTSTRAP4}
+                                alt="Bootstrap 4"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Bootstrap 4
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
                                 src={L_NODE_JS}
                                 alt="Node.js"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
                               Node.js
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_EXPRESS}
-                                alt="Express"
-                                rounded
-                                className="image-style1 m-1"
-                              ></Image>{" "}
-                              Express
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_POSTGRESQL}
-                                alt="PostgreSQL"
-                                rounded
-                                className="image-style1 m-1"
-                              ></Image>{" "}
-                              PostgreSQL
                             </span>
                           </li>
                         </ul>
@@ -239,12 +252,6 @@ const TimeLine = () => {
                   target="_blank"
                 >
                   SOURCE CODE
-                </UrlButton>
-                <UrlButton
-                  href="#"
-                  target="_blank"
-                >
-                  WATCH VIDEO
                 </UrlButton>
               </div>
             </div>
@@ -361,7 +368,7 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="#"
+                  href="https://itsrichardmai.github.io/authenticationapp"
                   target="_blank"
                 >
                   SEE LIVE

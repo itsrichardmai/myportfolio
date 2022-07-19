@@ -20,7 +20,8 @@ import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
-
+import L_MONGODB from "../../assets/img/skills/mongodb.svg";
+import L_FIREBASE from "../../assets/img/skills/firebase.svg";
 
 export const skills = {
   frontend: [
@@ -159,6 +160,19 @@ export const skills = {
       imgSrc: L_MSSQL,
       skillName: "MS-SQL",
     },
+    {
+      link: "https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204521&adgroup=1208363748749201&msclkid=348ee9a0fc911f94ad0c8b760c295140",
+      imgAltText: "MongoDB",
+      imgSrc: L_MONGODB,
+      skillName: "MongoDB",
+    },
+    {
+      link: "https://www.bing.com/search?q=firebase&cvid=cb1a5fb8d93a4bceb6567d71ada07bc5&aqs=edge..69i57j0l3j46j0l4.1538j0j1&pglt=41&FORM=ANNTA1&PC=ASTS",
+      imgAltText: "Firebase",
+      imgSrc: L_FIREBASE,
+      skillName: "Firebase",
+    },
+    
   ],
   versionControl: [
     {

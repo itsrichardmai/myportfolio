@@ -5,7 +5,7 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 import L_OldPortfolio from "../../assets/img/projects/oldportfolio.webp";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-
+import L_REACTBLOG from "../../assets/img/projects/reactblog.png"
 
 // skills
 import L_FirstPortfolio from "../../assets/img/projects/firstportfolio.webp"
@@ -17,6 +17,7 @@ import L_REACT from "../../assets/img/skills/react.svg";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/img/skills/express.svg";
 import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
+import L_MONGODB from "../../assets/img/skills/mongodb.svg";
 import Image from "react-bootstrap/Image";
 import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
@@ -26,6 +27,7 @@ import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_AUTHDEV from "../../assets/img/projects/authapp.png";
 import L_FIREBASE from "../../assets/img/projects/firebase.webp";
 import L_MYPORTFOLIO from "../../assets/img/projects/myportfolio.webp"
+
 
 import "./projects-timeline.styles.css";
 
@@ -38,11 +40,11 @@ const TimeLine = () => {
         <Events>
           {/* Project: Get GitHub Info */}
           <ImageEvent
-            date="10/09/2020"
+            date="07/19/2022"
             className="text-center"
-            text="Placeholder text"
-            // src={L_GetGitHubInfo}
-            alt="Placeholder text"
+            text="Blog React App"
+            src={L_REACTBLOG}
+            alt="Blog React App"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -58,12 +60,16 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An application description
+                        <strong>Description:</strong> Full-stack Modern website blog website built using the MERN stack. In this application, users are able to register, login, update and delete their account as well as create, read, update and delete posts. Users are also able to upload an image in their post in the WRITE page.  
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>listing placeholder</li>
-                          <li>listing placeholder</li>
+                          <li>Reactive components</li>
+                          <li>Working routing </li>
+                          <li>Bcrypt for password security</li>
+                          <li>Fully Functioning routes</li>
+                          <li>Functioning CRUD application</li>
+                          <li>Hosted on Heroku</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -112,6 +118,39 @@ const TimeLine = () => {
                               GitHub API
                             </span>
                           </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HEROKU}
+                                alt="Github API"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Heroku
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MONGODB}
+                                alt="Github API"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              MongoDB
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Github API"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Node.JS
+                            </span>
+                          </li>
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -120,13 +159,13 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="#"
+                  href="https://tea-chan0705.herokuapp.com/"
                   target="_blank"
                 >
                   SEE LIVE
                 </UrlButton>
                 <UrlButton
-                  href="#"
+                  href="https://github.com/itsrichardmai/reactblogApp"
                   target="_blank"
                 >
                   SOURCE CODE
